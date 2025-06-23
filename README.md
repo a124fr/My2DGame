@@ -35,7 +35,7 @@ src/
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/jogo-2d-java.git
+   git clone git@github.com:a124fr/My2DGame.git
    cd jogo-2d-java
 
 2. Compile os arquivos Java:

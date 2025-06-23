@@ -5,7 +5,7 @@ import java.awt.Dimension;
 
 import javax.swing.JPanel;
 
-public class GamePainel extends JPanel {
+public class GamePainel extends JPanel implements Runnable {
 
 	// SCREEN SETTINGS
 	final int originalTileSize = 16; // 16x16 tile será tamanho padrão do personagem do jogador, NPCS e Peçcas do mapa neste Jogo
@@ -18,6 +18,8 @@ public class GamePainel extends JPanel {
 	final int screenWidth = tileSize * maxScreenCol; //768 pixels
 	final int screenHeight = tileSize * maxScreenRow; // 576 pixels
 	
+	Thread gameThread;
+	
 	public GamePainel() {
 		this.setPreferredSize(new Dimension(screenWidth, screenHeight));
 		this.setBackground(Color.black);
@@ -26,6 +28,27 @@ public class GamePainel extends JPanel {
 		// verdadeiro para melhor desempenho de renderização
 		this.setDoubleBuffered(true);
 				
+		
+	}
+	
+	public void startGameThread() {
+		gameThread = new Thread(this);
+		gameThread.start();
+	}
+
+	// Basicamente, quando iniciamos o gameThread, ele chama automaticamente esse método de execução.
+	// Este método de execução, criamos um loop de jogo que será o núcleo do jogo
+	@Override
+	public void run() {// Game Loop
+		
+		while (gameThread != null) {
+			
+			System.out.println("The game loop is running...");
+			
+			// 1 UPDATE: update information such as character position
+			
+			// 2 DRAW: draw the screen width the updated information
+		}		
 		
 	}
 	
