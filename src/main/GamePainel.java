@@ -2,6 +2,8 @@ package main;
 
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 
 import javax.swing.JPanel;
 
@@ -46,9 +48,26 @@ public class GamePainel extends JPanel implements Runnable {
 			System.out.println("The game loop is running...");
 			
 			// 1 UPDATE: update information such as character position
-			
+			update();
 			// 2 DRAW: draw the screen width the updated information
+			repaint();
 		}		
+		
+	}
+	
+	public void update() {
+		
+	}
+	
+	// Método embutido em Java, é um método padrão para desenhar coisas no JPanel
+	public void paintComponent(Graphics g) {
+		super.paintComponent(g);
+		
+		Graphics2D g2 = (Graphics2D)g;
+		
+		g2.setColor(Color.white);
+		g2.fillRect(100, 100, tileSize, tileSize);
+		g2.dispose();
 		
 	}
 	
