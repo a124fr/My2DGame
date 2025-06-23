@@ -23,13 +23,18 @@ Este projeto é uma implementação prática da série **"How to Make a 2D Game 
 - `BufferedImage` para manipulação de sprites
 
 ## 📂 Estrutura Básica do Projeto
-src/
-├── Main.java
-├── GamePanel.java
-├── KeyHandler.java
-├── Player.java
-└── ... (demais classes)
-
+My2DGame/
+├── src/
+│ └── main/
+│ ├── GamePainel.java
+│ ├── KeyHandler.java
+│ └── Main.java
+├── docs/
+│ └── jogo2D.jpeg
+├── .classpath
+├── .gitignore
+├── .project
+└── README.md
 
 ## ▶️ Como Rodar o Projeto
 
