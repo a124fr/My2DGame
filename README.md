@@ -12,7 +12,6 @@ Este projeto é uma implementação prática da série **"How to Make a 2D Game 
 
 - Loop de jogo com lógica de FPS fixa
 - Sistema de atualização e renderização de sprites
-- Movimento básico do personagem principal com animação
 - Gerenciamento de entradas pelo teclado (KeyHandler)
 
 ## 🛠️ Tecnologias Utilizadas
@@ -55,13 +54,11 @@ java -cp src Main
 💡 Certifique-se de que suas imagens estejam na pasta res/ e referenciadas corretamente no código.
 
 🎯 Próximos Passos
-Implementar colisão com o mapa
-
-Adicionar tiles e mapa do mundo
-
-Criar sistema de NPCs e diálogos
-
-Inventário e combate
+- Movimento básico do personagem principal com animação
+- Implementar colisão com o mapa
+- Adicionar tiles e mapa do mundo
+- Criar sistema de NPCs e diálogos
+- Inventário e combate
 
 📸 Capturas de Tela
 Você pode visualizar uma demonstração do jogo abaixo:
